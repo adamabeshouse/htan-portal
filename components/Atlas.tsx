@@ -16,7 +16,7 @@ export const AtlasWrapper: React.FunctionComponent<{ category?: Category }> = ({
 
     const [selectedCategory, setCategory] = useState(Object.keys(category)[0]);
 
-    return <div>
+    return <div style={{ 'overflowX': 'auto' }}>
         <div style={{display: "flex", marginBottom:20}}>
             <select defaultValue={selectedCategory} onChange={(e)=>setCategory(e.target.value)} className={"form-control"} style={{marginRight: 10}}>
                 {
